@@ -1,0 +1,7 @@
+name: server
+title: Couchbase Server
+version: '5.0'
+nav:
+- modules/introduction/nav.adoc
+- modules/getting-started/nav.adoc
+- modules/administration/nav.adoc
