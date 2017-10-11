@@ -9,7 +9,7 @@ The menu:Settings[] menu sets the global settings for your Couchbase Server inst
 
 Full Administrators and Cluster Administrators can configure cluster settings.
 
-menu:Settings[Cluster] tab to configure the cluster name, memory quotas, and index settings.
+Use the menu:Settings[Cluster] tab to configure the cluster name, memory quotas, and index settings.
 You can define the settings using the Web Console, with the CLI command, or using the REST API.
 
 image::settings-cluster.png[,720]
@@ -47,7 +47,7 @@ At a minimum, it cannot be made smaller than the sum per node bucket quota of al
 The specified memory is pre-allocated as soon as the indexer starts up, and is shared with all indexes created on the node.
 The total memory usage of the indexer process will be the buffer cache plus the size of various internal data structures and queues.
 
-|FTS Services
+|FTS Service
 |This setting controls the RAM quota for Full Text search.
 It shows the amount of the main memory allocation for Full Text service per node.
 |===
@@ -56,7 +56,7 @@ It shows the amount of the main memory allocation for Full Text service per node
 
 Define the Global Secondary Index type as Standard or Memory-Optimized option and then click menu:Show Advanced Index Settings[] pull-down menu.
 
-|====
+|===
 |Option | Description
 
 |Indexer Threads
