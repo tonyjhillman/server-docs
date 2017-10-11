@@ -21,37 +21,20 @@ A basic N1QL query has the following parts:
 * `FROM` -- The data bucket in which to look.
 * `WHERE` -- The conditions that the document must satisfy.
 
-Here's an example of a basic N1QL query and the JSON document it returns. 
+Here's an example of a basic N1QL query and the JSON document it returns.
 The query asks for the country associated with the airline
 _Excel Airways_ -- note that for all identifiers (bucket names) that contain a hyphen character, you need to enclose the name with backtick (`) characters:
 
 [source,sql]
 ----
-SELECT country FROM `travel-sample` WHERE name = "Excel Airways";
+include::{samplesdir}/airways-query.adoc[]
 ----
 
 The result is as follows:
 
 [source,json]
 ----
-{
-    "requestID": "9e1cd084-f45e-4059-9e7a-edec30f60dd2",
-    "signature": {
-        "country": "json"
-    },
-    "results": [
-        {
-            "country": "United Kingdom"
-        }
-    ],
-    "status": "success",
-    "metrics": {
-        "elapsedTime": "7.42097249s",
-        "executionTime": "7.420925841s",
-        "resultCount": 1,
-        "resultSize": 51
-    }
-}
+include::{samplesdir}/airways-result.adoc[]
 ----
 
 The country is thus specified as `United Kingdom`.
@@ -79,42 +62,15 @@ This displays the `cbq` shell prompt, against which you can enter N1QL commands,
 For example, the following query returns the different values used by documents in the `travel-sample` bucket for the `callsign` field, limiting the number of results to 5:
 
 [source,sql]
-cbq> SELECT callsign FROM `travel-sample` LIMIT 5;
+----
+include::{samplesdir}/callsign-query.adoc[]
+----
 
 The result is as follows:
 
 [source,json]
 ----
-{
-    "requestID": "ae6fcd5b-e7f0-4725-ae1d-a38678c13a3e",
-    "signature": {
-        "callsign": "json"
-    },
-    "results": [
-        {
-            "callsign": "MILE-AIR"
-        },
-        {
-            "callsign": "TXW"
-        },
-        {
-            "callsign": "atifly"
-        },
-        {
-             "callsign": null
-        },
-        {
-             "callsign": "LOCAIR"
-        }
-    ],
-    "status": "success",
-    "metrics": {
-        "elapsedTime": "33.748019ms",
-        "executionTime": "33.673901ms",
-        "resultCount": 5,
-        "resultSize": 215
-    }
-}
+include::{samplesdir}/callsign-result.adoc[]
 ----
 
 The result thus contains five callsign-values.
@@ -243,14 +199,14 @@ Left-click on the [.uicontrol]*Query* tab, located on the horizontal control-bar
 [#query_button]
 image::queryButton.png[,100]
 
-This brings up the Query Workbench. 
+This brings up the Query Workbench.
 
 [#query_workbench]
 image::queryWorkbench.png[,720]
 
 The workbench has three principal areas, which are:
 
-* An upper [.uicontrol]*Query Editor* panel, which is where you will type your N1QL query. 
+* An upper [.uicontrol]*Query Editor* panel, which is where you will type your N1QL query.
 
 * A [.uicontrol]*Bucket Insights* panel, at the right.
 This provides information on the buckets currently maintained by your system.
@@ -290,7 +246,7 @@ In addition to following this brief tutorial, you can learn more about N1QL by l
 
 * The http://query.pub.couchbase.com/tutorial/#1[online interactive tutorial] allows you to learn about N1QL without having Couchbase Server installed in your own environment.
 It's a self-contained tutorial that runs in a web browser and lets you modify the sample queries.
-The tutorial covers SELECT statements in detail, including examples of JOIN, NEST, GROUP BY, and other typical clauses. 
+The tutorial covers SELECT statements in detail, including examples of JOIN, NEST, GROUP BY, and other typical clauses.
 
 * The http://docs.couchbase.com/files/Couchbase-N1QL-CheatSheet.pdf[N1QL cheat sheet] provides a concise summary of the basic syntax elements.
 Print it out and keep it on your desk where it'll be handy for quick reference.

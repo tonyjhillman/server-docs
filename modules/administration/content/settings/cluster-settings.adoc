@@ -20,7 +20,7 @@ To configure cluster settings using the Web Console:
 By default, the [.uicontrol]*Cluster* page is displayed.
 . Enter the following settings and click btn:[Save]:
 
-== Cluster Name</title>
+== Cluster Name
 
 |===
 |Option | Description
@@ -37,7 +37,6 @@ These values can be adjusted in the UI, with the CLI or with the REST API.
 
 |===
 |Option | Description
-
 
 |Data Service
 |The per node memory allocation for the key-value cache used by the data service.

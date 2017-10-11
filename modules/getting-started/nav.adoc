@@ -1,1 +1,5 @@
-* xref:replace-me.adoc[Replace Me]
+* xref:start-here.adoc[Start Here]
+** xref:do-a-quick-install.adoc[Step 1: Do a Quick Install]
+** Step 2: Look at the Results
+** xref:try-a-query.adoc[Step 3: Run Your First N1QL Query]
+** Step 4: Choose Your Next Steps

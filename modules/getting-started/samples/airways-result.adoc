@@ -1,0 +1,18 @@
+{
+    "requestID": "9e1cd084-f45e-4059-9e7a-edec30f60dd2",
+    "signature": {
+        "country": "json"
+    },
+    "results": [
+        {
+            "country": "United Kingdom"
+        }
+    ],
+    "status": "success",
+    "metrics": {
+        "elapsedTime": "7.42097249s",
+        "executionTime": "7.420925841s",
+        "resultCount": 1,
+        "resultSize": 51
+    }
+}

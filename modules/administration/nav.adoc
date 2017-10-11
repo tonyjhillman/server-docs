@@ -1,1 +1,3 @@
-* xref:replace-me.adoc[Replace Me]
+* Administration
+** xref:install/install-intro.adoc[Installing On-Premises]
+** xref:settings/cluster-settings.adoc[Configure Cluster Settings]

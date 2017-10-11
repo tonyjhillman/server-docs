@@ -1,1 +1,1 @@
-* xref:replace-me.adoc[Replace Me]
+* xref:intro.adoc[Why Couchbase?]

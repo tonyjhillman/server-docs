@@ -1,0 +1,30 @@
+{
+    "requestID": "ae6fcd5b-e7f0-4725-ae1d-a38678c13a3e",
+    "signature": {
+        "callsign": "json"
+    },
+    "results": [
+        {
+            "callsign": "MILE-AIR"
+        },
+        {
+            "callsign": "TXW"
+        },
+        {
+            "callsign": "atifly"
+        },
+        {
+             "callsign": null
+        },
+        {
+             "callsign": "LOCAIR"
+        }
+    ],
+    "status": "success",
+    "metrics": {
+        "elapsedTime": "33.748019ms",
+        "executionTime": "33.673901ms",
+        "resultCount": 5,
+        "resultSize": 215
+    }
+}
