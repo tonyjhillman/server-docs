@@ -27,14 +27,14 @@ _Excel Airways_ -- note that for all identifiers (bucket names) that contain a h
 
 [source,sql]
 ----
-include::{samplesdir}/airways-query.adoc[]
+include::{samplesdir}/airways-query.sql[]
 ----
 
 The result is as follows:
 
 [source,json]
 ----
-include::{samplesdir}/airways-result.adoc[]
+include::{samplesdir}/airways-result.json[]
 ----
 
 The country is thus specified as `United Kingdom`.
@@ -63,14 +63,14 @@ For example, the following query returns the different values used by documents 
 
 [source,sql]
 ----
-include::{samplesdir}/callsign-query.adoc[]
+include::{samplesdir}/callsign-query.sql[]
 ----
 
 The result is as follows:
 
 [source,json]
 ----
-include::{samplesdir}/callsign-result.adoc[]
+include::{samplesdir}/callsign-result.json[]
 ----
 
 The result thus contains five callsign-values.
