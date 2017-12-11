@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 [abstract]
-Couchbase Server installation covers pre-installation, installation on supported platforms, post-installation, upgrading, cloud deployment and migration procedures.
+Couchbase Server installation covers pre-installation, installation on supported platforms, post-installation, upgrading, cloud deployment and migration procedures. And more. And more.
 
 Installation involves picking up the platform and the correct software edition for your needs, downloading the software, and running the installer.
 
