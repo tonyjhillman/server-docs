@@ -5,7 +5,7 @@ endif::[]
 :experimental:
 
 [abstract]
-The menu:Settings[] menu sets the global settings for your Couchbase Server instance.
+The menu:Settings[] menu sets the global settings for your Couchbase Server instance. Test addition to Configure Cluster Settings.
 
 Full Administrators and Cluster Administrators can configure cluster settings.
 
